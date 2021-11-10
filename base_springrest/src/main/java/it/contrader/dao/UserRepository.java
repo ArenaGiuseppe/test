@@ -12,7 +12,7 @@ import it.contrader.model.User;
  * Estende CrudRepository ed eredita tutti i metodi di CRUD. 
  * Definisce il metodo di login.
  * 
- * @author Vittorio Valent & Girolamo Murdaca
+ * 
  *
  * @see CrudRepository
  *

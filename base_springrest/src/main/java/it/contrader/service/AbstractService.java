@@ -12,7 +12,7 @@ import it.contrader.converter.Converter;
  * Il converter agisce due volte nei metodi  insert e update per avere sia come input che come output
  * un oggetto DTO.
  * 
- * @author Vittorio Valent & Girolamo Murdaca
+ * 
  *
  * @param <Entity>
  * @param <DTO>

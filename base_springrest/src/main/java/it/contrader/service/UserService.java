@@ -10,7 +10,7 @@ import it.contrader.model.User;
  * Estende AbstractService con parametri User e UserDTO. 
  * Implementa il metodo di login ed eredita quelli Abstract. 
  * 
- * @author Vittorio Valent & Girolamo Murdaca
+ * 
  * 
  * @see AbstractService
  * @see ServiceDTO

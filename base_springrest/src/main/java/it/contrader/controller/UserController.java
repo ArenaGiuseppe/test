@@ -17,7 +17,7 @@ import it.contrader.service.UserService;
  * Questa classe estende AbstractController con tipo UserDTO.
  * In aggiunta ai metodi di CRUD si implementa il metodo di login.
  * 
- * @author Vittorio Valent & Girolamo Murdaca
+ * 
  * 
  * @param<UserDTO>
  * 

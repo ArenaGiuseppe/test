@@ -9,7 +9,7 @@ import it.contrader.model.User;
 /**
  * Questa classe implementa i metodi di conversione dell'entità User.
  *  
- * @author Vittorio Valent & Girolamo Murdaca
+ * 
  * 
  *@see AbstractConverter
  *@see Converter
