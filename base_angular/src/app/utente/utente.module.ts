@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { AdminRoutingModule } from './admin-routing.module';
-import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { UtenteRoutingModule } from './utente-routing.module';
+import { UtenteDashboardComponent } from './utente-dashboard/utente-dashboard.component';
 import { UsersComponent } from './users/users.component';
 import { WorkInProgressComponent } from './work-in-progress/work-in-progress.component';
 
 
 @NgModule({
-  declarations: [AdminDashboardComponent, UsersComponent, WorkInProgressComponent],
+  declarations: [UtenteDashboardComponent, UsersComponent, WorkInProgressComponent],
   imports: [
     CommonModule,
-    AdminRoutingModule,
+    UtenteRoutingModule,
     FormsModule
   ]
 })
-export class AdminModule { }
+export class UtenteModule { }

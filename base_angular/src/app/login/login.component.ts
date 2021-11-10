@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
 
         switch (user.usertype.toString()) {
           case 'ADMIN': {
-            this.router.navigate(['/admin-dashboard']);
+            this.router.navigate(['/utente-dashboard']);
             break;
           }
           case 'USER': {

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AdminLayoutComponent } from './admin-layout/admin-layout.component';
-import { AdminMenuComponent } from './admin-layout/admin-menu/admin-menu.component';
+import { UtenteLayoutComponent } from './utente-layout/utente-layout.component';
+import { UtenteMenuComponent } from './utente-layout/utente-menu/utente-menu.component';
 import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
 import { UserLayoutComponent } from './user-layout/user-layout.component';
@@ -9,7 +9,7 @@ import { UserMenuComponent } from './user-layout/user-menu/user-menu.component';
 
 
 @NgModule({
-  declarations: [AdminLayoutComponent, AdminMenuComponent, HeaderComponent, UserLayoutComponent, UserMenuComponent],
+  declarations: [UtenteLayoutComponent, UtenteMenuComponent, HeaderComponent, UserLayoutComponent, UserMenuComponent],
   imports: [
     CommonModule,
     RouterModule
