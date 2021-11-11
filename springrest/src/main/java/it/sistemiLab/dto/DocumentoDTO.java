@@ -1,32 +1,30 @@
-package it.contrader.dto;
+package it.sistemiLab.dto;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-import it.contrader.model.User.Usertype;
+import it.sistemiLab.model.Progetto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * DTO della classe User. Ha gli stessi attributi di User
+ * DTO della classe Documento. Ha gli stessi attributi di Documento
  * 
  * 
  * 
- *@see User
+ *@see Documento
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id")
-public class UserDTO {
+public class DocumentoDTO {
 
 	private long id;
 	
-	private String username;
-	
-	private String password;
+	private String nomeDocumento;
 
-	private Usertype usertype;
+	private Progetto progetto;
 	
 
 }

@@ -1,10 +1,10 @@
-package it.contrader.service;
+package it.sistemiLab.service;
 
 import org.springframework.stereotype.Service;
 
-import it.contrader.dao.UserRepository;
-import it.contrader.dto.UserDTO;
-import it.contrader.model.User;
+import it.sistemiLab.dao.UserRepository;
+import it.sistemiLab.dto.UserDTO;
+import it.sistemiLab.model.User;
 
 /**
  * Estende AbstractService con parametri User e UserDTO. 

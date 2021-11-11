@@ -1,4 +1,4 @@
-package it.contrader.service;
+package it.sistemiLab.service;
 
 /**
  * Questa interfaccia firma i metodi dei Service. Osservare che, a differenza di
@@ -8,7 +8,7 @@ package it.contrader.service;
  *
  * @param <DTO>
  * 
- * @see AbstractService.
+ * @see AbstractService
  */
 public interface ServiceDTO<DTO> {
 	

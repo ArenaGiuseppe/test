@@ -1,4 +1,4 @@
-package it.contrader.controller;
+package it.sistemiLab.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import it.contrader.service.ServiceDTO;
+import it.sistemiLab.service.ServiceDTO;
 
 /**
  * In questa classe sono implementati tutti i metodi di CRUD dei Controller, paramentrizzati dal tipo
