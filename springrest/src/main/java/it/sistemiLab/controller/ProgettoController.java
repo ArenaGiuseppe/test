@@ -27,9 +27,9 @@ public class ProgettoController extends AbstractController<ProgettoDTO>{
 	private ProgettoService progettoService;
 
 
-	//POST Angular a DocumentoDTO
+	//POST Angular a ProgettoDTO
 	@PostMapping(value = "/read/{nomeprogetto}")
-	public ProgettoDTO getProgettooByNome(@PathVariable("nomeprogetto") String nomeProgetto) {
-		return progettoService.findByNome(nomeProgetto);
+	public ProgettoDTO getProgettoByNome(@PathVariable("nomeprogetto") String nomeProgetto) {
+		return progettoService.findByNomeProgetto(nomeProgetto);
 	}
 }

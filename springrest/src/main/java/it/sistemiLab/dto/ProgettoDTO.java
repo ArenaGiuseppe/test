@@ -3,6 +3,7 @@ package it.sistemiLab.dto;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import it.sistemiLab.model.Documento;
+import it.sistemiLab.model.Progetto;
 import it.sistemiLab.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,12 +25,17 @@ import java.util.List;
 public class ProgettoDTO {
 
 	private long id;
-	
+
 	private String nomeProgetto;
+
+	//private Progetto progetto;
 
 	private User user;
 
 	private List<Documento> documento;
-	
-
 }
+
+
+
+
+

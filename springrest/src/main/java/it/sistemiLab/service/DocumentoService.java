@@ -16,13 +16,9 @@ import org.springframework.stereotype.Service;
  * @see ServiceDTO
  */
 @Service
-public class DocumentoService extends AbstractService<Documento,DocumentoDTO> {
+public class DocumentoService extends AbstractService<Documento, DocumentoDTO> {
 
-	//ALL crud methods in AbstractService
-
-	//ricerca by nome
-	public DocumentoDTO findByNome(String nomeDocumento) {
-		return converter.toDTO(((DocumentoRepository)repository).findByNome(nomeDocumento));
+	public DocumentoDTO findByNomeDocumento(String nomeDocumento) {
+		return converter.toDTO(((DocumentoRepository)repository).findByNomeDocumento(nomeDocumento));
 	}
-
 }

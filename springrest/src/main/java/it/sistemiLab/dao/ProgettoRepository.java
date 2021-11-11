@@ -6,20 +6,8 @@ import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
 
-
-/**
- * Estende CrudRepository ed eredita tutti i metodi di CRUD. 
- * Definisce il metodo di login.
- * 
- * 
- *
- * @see CrudRepository
- *
- */
 @Repository
 @Transactional
-public interface ProgettoRepository extends CrudRepository<Progetto, Long>{
-
-	Progetto findByNome(String nomeProgetto);
-	
+public interface ProgettoRepository extends CrudRepository<Progetto, Long> {
+	Progetto findByNomeProgetto (String nomeProgetto);
 }

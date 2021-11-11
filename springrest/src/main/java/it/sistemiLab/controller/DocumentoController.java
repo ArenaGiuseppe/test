@@ -30,6 +30,6 @@ public class DocumentoController extends AbstractController<DocumentoDTO>{
     //POST Angular a DocumentoDTO
     @PostMapping(value = "/read/{nomedocumento}")
     public DocumentoDTO getDocumentoByNome( @PathVariable("nomedocumento") String nomeDocumento) {
-        return documentoService.findByNome(nomeDocumento);
+        return documentoService.findByNomeDocumento(nomeDocumento);
     }
 }
