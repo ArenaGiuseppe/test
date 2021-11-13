@@ -9,6 +9,10 @@ export class UserDTO {
 
    password: string;
 
+   nome: string;
+
+   cognome: string;
+
    usertype: Usertype;
 
 }

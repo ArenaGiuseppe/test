@@ -6,8 +6,5 @@ export class ProgettoDTO{
 
     id: number;
     nomeProgetto: string;
-    user: UserDTO;
-    documento: DocumentoDTO;
-
 
 }

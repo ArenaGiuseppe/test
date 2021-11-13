@@ -14,28 +14,28 @@ export class DocumentoComponent implements OnInit {
 
   constructor(
       private service: DocumentoService,
-      private documentoService: DocumentoService,
+
   ) { }
 
   ngOnInit() {
-    this.getProgetti()
+    this.getDocumenti()
 
   }
 
-  getProgetti(){
+  getDocumenti(){
     this.service.getAll().subscribe(documento => this.documento = documento);//uso l'arrow function per popolare l'array
   }
 
-  deleteProgetti(documento: DocumentoDTO){
-    this.service.delete(documento.id).subscribe(() => this.getProgetti())
+  deleteDocumenti(documento: DocumentoDTO){
+    this.service.delete(documento.id).subscribe(() => this.getDocumenti())
   }
 
-  updateProgetti(documento: DocumentoDTO){
-    this.service.update(documento).subscribe(()=> this.getProgetti())
+  updateDocumenti(documento: DocumentoDTO){
+    this.service.update(documento).subscribe(()=> this.getDocumenti())
   }
 
-  insertProgetti(documento: DocumentoDTO){
-    this.service.insert(documento).subscribe(()=> this.getProgetti())
+  insertDocumenti(documento: DocumentoDTO){
+    this.service.insert(documento).subscribe(()=> this.getDocumenti())
   }
 
   clear(){

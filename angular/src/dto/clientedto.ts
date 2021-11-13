@@ -1,9 +1,9 @@
 import {ProgettoDTO} from "./progettodto";
 
 
-export class DocumentoDTO{
+export class ClienteDTO{
 
     id: number;
-    nomeDocumento: string;
+    nomeCliente: string;
 
 }

@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ProgettoDTO} from "../../../dto/progettodto";
-import {DocumentoDTO} from "../../../dto/documentodto";
 import {ProgettoService} from "../../../service/progetto.service";
-import {DocumentoService} from "../../../service/documento.service";
 
 @Component({
   selector: 'app-progetto',
@@ -12,12 +10,12 @@ import {DocumentoService} from "../../../service/documento.service";
 export class ProgettoComponent implements OnInit {
 
   project: ProgettoDTO[];
-  documento: DocumentoDTO[];
+
   insertProgetto: ProgettoDTO = new ProgettoDTO();
 
   constructor(
       private service: ProgettoService,
-      private documentoService: DocumentoService,
+
   ) { }
 
   ngOnInit() {

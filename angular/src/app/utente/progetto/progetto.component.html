@@ -12,12 +12,6 @@
           <th>
             Nome Progetto
           </th>
-          <th>
-            Cliente
-          </th>
-          <th>
-            Nome Documenti
-          </th>
         </tr>
         <tr>
           <td>
@@ -27,30 +21,18 @@
             <input placeholder="nome Progetto" [(ngModel)]="insertProgetto.nomeProgetto">
           </td>
           <td>
-            <input placeholder="Cliente" [(ngModel)]="insertProgetto.user">
-          </td>
-          <td>
-            <input placeholder="Documento" [(ngModel)]="insertProgetto.documento">
-          </td>
-          <td>
             <button (click)="insertProgetti(insertProgetto)">Inserisici</button>
           </td>
           <td>
             <button (click)="clear()">Clear</button>
           </td>
         </tr>
-        <tr *ngFor="let progetti of progetto">
+        <tr *ngFor="let progetti of project">
           <td>
             {{progetti.id}}
           </td>
           <td>
             <input [(ngModel)]="progetti.nomeProgetto">
-          </td>
-          <td>
-            <input [(ngModel)]="progetti.user">
-          </td>
-          <td>
-            <input [(ngModel)]="progetti.documento">
           </td>
           <td>
             <button (click)="updateProgetti(progetti)">Salva</button>

@@ -5,5 +5,5 @@ export class DocumentoDTO{
 
     id: number;
     nomeDocumento: string;
-    Progetto: ProgettoDTO;
+
 }

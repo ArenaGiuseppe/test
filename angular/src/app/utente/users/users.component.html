@@ -13,6 +13,12 @@
             Password
           </th>
           <th>
+            Nome
+          </th>
+          <th>
+            Cognome
+          </th>
+          <th>
             Usertype
           </th>
           <th>
@@ -28,6 +34,12 @@
           </td>
           <td>
             <input placeholder="password" [(ngModel)]="usertoinsert.password">
+          </td>
+          <td>
+            <input placeholder="nome" [(ngModel)]="usertoinsert.nome">
+          </td>
+          <td>
+            <input placeholder="cognome" [(ngModel)]="usertoinsert.cognome">
           </td>
           <td>
             <select placeholder="usertype" [(ngModel)]="usertoinsert.usertype">
@@ -48,6 +60,12 @@
           </td>
           <td>
             <input [(ngModel)]="user.password">
+          </td>
+          <td>
+            <input [(ngModel)]="user.nome">
+          </td>
+          <td>
+            <input [(ngModel)]="user.cognome">
           </td>
           <td>
             <select [(ngModel)]="user.usertype">

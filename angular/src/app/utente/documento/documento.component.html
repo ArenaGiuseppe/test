@@ -1,3 +1,50 @@
-<p>
-  documento works!
-</p>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-10">
+      <table>
+        <tr>
+          <th>
+            ID
+          </th>
+          <th>
+            Nome Documento
+          </th>
+        </tr>
+        <tr>
+          <td>
+
+          </td>
+          <td>
+            <input placeholder="nome Progetto" [(ngModel)]="insertDocumento.nomeDocumento">
+          </td>
+          <td>
+            <button (click)="insertDocumenti(insertDocumento)">Inserisici</button>
+          </td>
+          <td>
+            <button (click)="clear()">Clear</button>
+          </td>
+        </tr>
+        <tr *ngFor="let documenti of documento">
+          <td>
+            {{documenti.id}}
+          </td>
+          <td>
+            <input [(ngModel)]="documenti.nomeDocumento">
+          </td>
+          <td>
+            <button (click)="updateDocumenti(documenti)">Salva</button>
+          </td>
+          <td>
+            <button (click)="deleteDocumenti(documenti)">Cancella</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+  </div>
+</div>
