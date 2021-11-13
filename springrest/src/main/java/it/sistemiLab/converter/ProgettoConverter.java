@@ -19,7 +19,7 @@ public class ProgettoConverter extends AbstractConverter<Progetto, ProgettoDTO> 
 	public Progetto toEntity(ProgettoDTO progettoDTO) {
 		Progetto progetto = null;
 		if (progettoDTO != null) {
-			progetto = new Progetto(progettoDTO.getId(), progettoDTO.getNomeProgetto(), progettoDTO.getUser(), progettoDTO.getDocumento());
+			progetto = new Progetto(progettoDTO.getId(), progettoDTO.getNomeProgetto());
 		}
 		return progetto;
 	}
@@ -28,7 +28,7 @@ public class ProgettoConverter extends AbstractConverter<Progetto, ProgettoDTO> 
 	public ProgettoDTO toDTO(Progetto progetto) {
 		ProgettoDTO progettoDTO = null;
 		if (progetto != null) {
-			progettoDTO = new ProgettoDTO(progetto.getId(), progetto.getNomeProgetto(), progetto.getUser(), progetto.getDocumento());
+			progettoDTO = new ProgettoDTO(progetto.getId(), progetto.getNomeProgetto());
 			
 		}
 		return progettoDTO;

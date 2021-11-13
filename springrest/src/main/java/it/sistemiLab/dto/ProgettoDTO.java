@@ -28,11 +28,6 @@ public class ProgettoDTO {
 
 	private String nomeProgetto;
 
-	//private Progetto progetto;
-
-	private User user;
-
-	private List<Documento> documento;
 }
 
 

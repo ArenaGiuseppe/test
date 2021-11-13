@@ -7,26 +7,25 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+
 /**
- * 
- * Model dell'entità Documento.
- * 
- * 
- * 
- * @see DocumentoDTO
+ *
+ * Model dell'entità Cliente.
+ *
+ *
+ *
+ * @see ClienteDTO
  */
 @Data
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-public class Documento {
 
+public class Cliente {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
-	
-	@Column(unique = true)
-	private String nomeDocumento;
-
+    @Column(unique = true)
+    private String nomeCliente;
 }

@@ -41,11 +41,17 @@ public class User {
     @Column(unique = true)
     private String username;
 
+    @Column
     private String password;
 
+    @Column
+    private String nome;
+
+    @Column
+    private String cognome;
+
+    @Column
+    @Enumerated(EnumType.STRING)
     private Usertype usertype;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    @JsonIgnoreProperties("user")
-    private List<Progetto> progetto;
 }

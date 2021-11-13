@@ -29,9 +29,11 @@ public class UserDTO {
 	
 	private String password;
 
+	private  String nome;
+
+	private String cognome;
+
 	private Usertype usertype;
 
-	private List<Progetto> progetto;
-	
 
 }
