@@ -51,7 +51,6 @@ public class User {
     private String cognome;
 
     @Column
-    @Enumerated(EnumType.STRING)
     private Usertype usertype;
 
 }
