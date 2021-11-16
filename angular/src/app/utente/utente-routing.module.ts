@@ -5,6 +5,8 @@ import {UtenteDashboardComponent} from './utente-dashboard/utente-dashboard.comp
 import {UsersComponent} from './users/users.component';
 import {WorkInProgressComponent} from './work-in-progress/work-in-progress.component';
 import {ProgettoComponent} from './progetto/progetto.component';
+import {DocumentoComponent} from './documento/documento.component';
+import {ClienteComponent} from './cliente/cliente.component';
 
 
 const routes: Routes = [
@@ -13,7 +15,10 @@ const routes: Routes = [
             {path: '', component: UtenteDashboardComponent},
             {path: 'users', component: UsersComponent},
             {path: 'work-in-progress', component: WorkInProgressComponent},
-            {path: 'progetti', component: ProgettoComponent}
+            {path: 'progetti', component: ProgettoComponent},
+            {path: 'documenti', component: DocumentoComponent},
+            {path: 'clienti', component: ClienteComponent}
+
         ]
     }
 ];
