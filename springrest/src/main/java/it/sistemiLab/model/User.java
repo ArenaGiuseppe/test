@@ -50,9 +50,11 @@ public class User {
     private String cognome;
 
     @Column
-    private Usertype usertype;
-
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Cliente> cliente;
+
+    @Column
+    private Usertype usertype;
+
 
 }

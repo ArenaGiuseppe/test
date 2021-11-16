@@ -22,7 +22,7 @@ public class UserConverter extends AbstractConverter<User,UserDTO> {
 		User user = null;
 		if (userDTO != null) {
 			user = new User(userDTO.getId(), userDTO.getUsername(), userDTO.getPassword(),userDTO.getNome(),
-					userDTO.getCognome(),userDTO.getUsertype(), userDTO.getCliente());
+					userDTO.getCognome(), userDTO.getCliente(), userDTO.getUsertype());
 		}
 		return user;
 	}
@@ -32,8 +32,7 @@ public class UserConverter extends AbstractConverter<User,UserDTO> {
 		UserDTO userDTO = null;
 		if (user != null) {
 			userDTO = new UserDTO(user.getId(),user.getUsername(),user.getPassword(),user.getNome(),
-					user.getCognome(),user.getUsertype(), user.getCliente());
-			
+					user.getCognome(), user.getCliente(), user.getUsertype());
 		}
 		return userDTO;
 	}

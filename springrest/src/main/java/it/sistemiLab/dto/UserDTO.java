@@ -34,9 +34,9 @@ public class UserDTO {
 
 	private String cognome;
 
-	private Usertype usertype;
-
 	private  List<Cliente> cliente;
+
+	private Usertype usertype;
 
 
 }
