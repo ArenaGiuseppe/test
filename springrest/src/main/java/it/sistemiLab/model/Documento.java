@@ -30,7 +30,7 @@ public class Documento {
 	private String nomeDocumento;
 
 	@ManyToOne
-	@JoinColumn(name = "nomeProgetto")
+	@JoinColumn(name = "nome_progetto", referencedColumnName = "nomeProgetto")
 	private Progetto progetto;
 
 }

@@ -31,7 +31,7 @@ public class Cliente {
     private String nomeCliente;
 
     @ManyToOne
-    @JoinColumn(name = "nome")
+    @JoinColumn(name = "nome_utente", referencedColumnName = "nome")
     private User user;
 
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
