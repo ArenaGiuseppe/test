@@ -13,10 +13,12 @@ export class UserDTO {
    nome: string;
 
    cognome: string;
+   
+   cliente: ClienteDTO[];
 
    usertype: Usertype;
 
-   cliente: ClienteDTO[];
+
 
 }
 

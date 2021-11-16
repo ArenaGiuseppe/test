@@ -19,10 +19,10 @@
             Cognome
           </th>
           <th>
-            Usertype
+            Clienti
           </th>
           <th>
-            Progetti
+            Usertype
           </th>
           <th>
             Edit
@@ -45,13 +45,13 @@
             <input placeholder="cognome" [(ngModel)]="usertoinsert.cognome">
           </td>
           <td>
+            <input placeholder="cognome" [(ngModel)]="usertoinsert.cliente">
+          </td>
+          <td>
             <select placeholder="usertype" [(ngModel)]="usertoinsert.usertype">
               <option value="UTENTE">UTENTE</option>
               <option value="CLIENTE">CLIENTE</option>
             </select>
-          </td>
-          <td>
-            <input placeholder="cognome" [(ngModel)]="usertoinsert.cliente">
           </td>
           <td>
             <button (click)="insert(usertoinsert)">Insert</button>
@@ -74,13 +74,13 @@
             <input [(ngModel)]="user.cognome">
           </td>
           <td>
+            <input [(ngModel)]="user.cliente">
+          </td>
+          <td>
             <select [(ngModel)]="user.usertype">
               <option [selected]="user.usertype===UTENTE" value="UTENTE">UTENTE</option>
               <option [selected]="user.usertype===CLIENTE" value="CLIENTE">CLIENTE</option>
             </select>
-          </td>
-          <td>
-            <input [(ngModel)]="user.cliente">
           </td>
           <td>
             <button (click)=update(user)>Save</button>
