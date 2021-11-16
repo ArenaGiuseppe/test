@@ -2,6 +2,7 @@ package it.sistemiLab.dto;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import it.sistemiLab.model.Cliente;
 import it.sistemiLab.model.Progetto;
 import it.sistemiLab.model.User.Usertype;
 import lombok.AllArgsConstructor;
@@ -15,7 +16,7 @@ import java.util.List;
  * 
  * 
  * 
- *@see User
+ *@see it.sistemiLab.model.User
  */
 @Data
 @AllArgsConstructor
@@ -34,6 +35,8 @@ public class UserDTO {
 	private String cognome;
 
 	private Usertype usertype;
+
+	private  List<Cliente> cliente;
 
 
 }

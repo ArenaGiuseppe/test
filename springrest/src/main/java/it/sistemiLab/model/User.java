@@ -21,7 +21,7 @@ import java.util.List;
  *
  *
  *
- * @see UserDTO
+ * @see it.sistemiLab.dto.UserDTO
  */
 @Data
 @Entity
@@ -52,5 +52,8 @@ public class User {
 
     @Column
     private Usertype usertype;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Cliente> cliente;
 
 }

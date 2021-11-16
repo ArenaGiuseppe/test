@@ -6,15 +6,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 
 /**
  *
  * Model dell'entità Cliente.
  *
+ * @see it.sistemiLab.dto.ClienteDTO
  *
  *
- * @see ClienteDTO
  */
 @Data
 @Entity
@@ -28,4 +29,11 @@ public class Cliente {
 
     @Column(unique = true)
     private String nomeCliente;
+
+    @ManyToOne
+    @JoinColumn(name = "nome")
+    private User user;
+
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
+    private List<Progetto> progetto;
 }

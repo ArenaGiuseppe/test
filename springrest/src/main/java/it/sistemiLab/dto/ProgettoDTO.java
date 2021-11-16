@@ -2,6 +2,7 @@ package it.sistemiLab.dto;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import it.sistemiLab.model.Cliente;
 import it.sistemiLab.model.Documento;
 import it.sistemiLab.model.Progetto;
 import it.sistemiLab.model.User;
@@ -16,7 +17,7 @@ import java.util.List;
  * 
  * 
  * 
- *@see Documento
+ *@see Progetto
  */
 @Data
 @AllArgsConstructor
@@ -27,6 +28,11 @@ public class ProgettoDTO {
 	private long id;
 
 	private String nomeProgetto;
+
+	private Cliente cliente;
+
+	private List<Documento> documento;
+
 
 }
 

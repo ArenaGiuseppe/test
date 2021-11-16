@@ -19,7 +19,7 @@ public class ClienteConverter extends AbstractConverter<Cliente, ClienteDTO> {
 	public Cliente toEntity(ClienteDTO clienteDTO) {
 		Cliente cliente = null;
 		if (clienteDTO != null) {
-			cliente = new Cliente(clienteDTO.getId(), clienteDTO.getNomeCliente());
+			cliente = new Cliente(clienteDTO.getId(), clienteDTO.getNomeCliente(), clienteDTO.getUser(), clienteDTO.getProgetto());
 		}
 		return cliente;
 	}
@@ -28,7 +28,7 @@ public class ClienteConverter extends AbstractConverter<Cliente, ClienteDTO> {
 	public ClienteDTO toDTO(Cliente cliente) {
 		ClienteDTO clienteDTO = null;
 		if (cliente != null) {
-			clienteDTO = new ClienteDTO(cliente.getId(), cliente.getNomeCliente());
+			clienteDTO = new ClienteDTO(cliente.getId(), cliente.getNomeCliente(), clienteDTO.getUser(), cliente.getProgetto());
 			
 		}
 		return clienteDTO;

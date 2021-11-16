@@ -6,15 +6,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.print.Doc;
 import java.util.List;
 
 /**
- * 
+ *
  * Model dell'entità Progetto.
- * 
- * 
- * 
- * @see ProgettoDTO
+ *
+ *
+ * @see it.sistemiLab.dto.ProgettoDTO
+ *
  */
 @Data
 @Entity
@@ -25,8 +26,15 @@ public class Progetto {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	
+
 	@Column(unique = true)
 	private String nomeProgetto;
-	
+
+	@ManyToOne
+	@JoinColumn(name = "nomeCliente")
+	private Cliente cliente;
+
+	@OneToMany(mappedBy = "progetto", cascade = CascadeType.ALL)
+	private List<Documento> documento;
+
 }

@@ -8,12 +8,12 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 /**
- * 
+ *
  * Model dell'entità Documento.
- * 
- * 
- * 
- * @see DocumentoDTO
+ *
+ *
+ * @see it.sistemiLab.dto.DocumentoDTO
+ *
  */
 @Data
 @Entity
@@ -25,8 +25,12 @@ public class Documento {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	
+
 	@Column(unique = true)
 	private String nomeDocumento;
+
+	@ManyToOne
+	@JoinColumn(name = "nomeProgetto")
+	private Progetto progetto;
 
 }

@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
  * 
  * 
  * 
- *@see Documento
+ *@see it.sistemiLab.model.Documento
  */
 @Data
 @AllArgsConstructor
@@ -23,5 +23,7 @@ public class DocumentoDTO {
 	private long id;
 	
 	private String nomeDocumento;
+
+	private  Progetto progetto;
 
 }
