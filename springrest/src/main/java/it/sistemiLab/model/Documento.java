@@ -1,5 +1,6 @@
 package it.sistemiLab.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -30,6 +31,7 @@ public class Documento implements Serializable {
 	private String nomeDocumento;
 
 	@ManyToOne
+	@JsonIgnoreProperties("documento")
 	@JoinColumn(name = "nome_progetto", referencedColumnName = "nomeProgetto")
 	private Progetto progetto;
 

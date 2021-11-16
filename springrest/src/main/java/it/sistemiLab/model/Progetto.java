@@ -1,5 +1,6 @@
 package it.sistemiLab.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -30,10 +31,12 @@ public class Progetto implements Serializable {
 	private String nomeProgetto;
 
 	@ManyToOne
+	@JsonIgnoreProperties("progetto")
 	@JoinColumn(name = "nome_cliente", referencedColumnName = "nomeCLiente")
 	private Cliente cliente;
 
 	@OneToMany(mappedBy = "progetto", cascade = CascadeType.ALL)
+	@JsonIgnoreProperties("progetto")
 	private List<Documento> documento;
 
 }
