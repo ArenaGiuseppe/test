@@ -1,4 +1,5 @@
 import {Usertype} from './usertype';
+import {ClienteDTO} from './clientedto';
 
 
 export class UserDTO {
@@ -14,6 +15,8 @@ export class UserDTO {
    cognome: string;
 
    usertype: Usertype;
+
+   cliente: ClienteDTO[];
 
 }
 

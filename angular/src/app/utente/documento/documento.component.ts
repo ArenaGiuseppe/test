@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {DocumentoDTO} from "../../../dto/documentodto";
-import {DocumentoService} from "../../../service/documento.service";
+import {DocumentoDTO} from '../../../dto/documentodto';
+import {DocumentoService} from '../../../service/documento.service';
 
 @Component({
   selector: 'app-documento',
@@ -18,27 +18,27 @@ export class DocumentoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getDocumenti()
+    this.getDocumenti();
 
   }
 
-  getDocumenti(){
-    this.service.getAll().subscribe(documento => this.documento = documento);//uso l'arrow function per popolare l'array
+  getDocumenti() {
+    this.service.getAll().subscribe(documento => this.documento = documento); // uso l'arrow function per popolare l'array
   }
 
-  deleteDocumenti(documento: DocumentoDTO){
-    this.service.delete(documento.id).subscribe(() => this.getDocumenti())
+  deleteDocumenti(documento: DocumentoDTO) {
+    this.service.delete(documento.id).subscribe(() => this.getDocumenti());
   }
 
-  updateDocumenti(documento: DocumentoDTO){
-    this.service.update(documento).subscribe(()=> this.getDocumenti())
+  updateDocumenti(documento: DocumentoDTO) {
+    this.service.update(documento).subscribe(() => this.getDocumenti());
   }
 
-  insertDocumenti(documento: DocumentoDTO){
-    this.service.insert(documento).subscribe(()=> this.getDocumenti())
+  insertDocumenti(documento: DocumentoDTO) {
+    this.service.insert(documento).subscribe(() => this.getDocumenti());
   }
 
-  clear(){
-    this.insertDocumento = new DocumentoDTO()
+  clear() {
+    this.insertDocumento = new DocumentoDTO();
   }
 }

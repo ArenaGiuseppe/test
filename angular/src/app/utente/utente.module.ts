@@ -7,10 +7,12 @@ import { UsersComponent } from './users/users.component';
 import { WorkInProgressComponent } from './work-in-progress/work-in-progress.component';
 import { ProgettoComponent } from './progetto/progetto.component';
 import { DocumentoComponent } from './documento/documento.component';
+import { ClienteComponent } from './cliente/cliente.component';
 
 
 @NgModule({
-  declarations: [UtenteDashboardComponent, UsersComponent, WorkInProgressComponent, ProgettoComponent, DocumentoComponent],
+  // tslint:disable-next-line:max-line-length
+  declarations: [UtenteDashboardComponent, UsersComponent, WorkInProgressComponent, ProgettoComponent, DocumentoComponent, ClienteComponent],
   imports: [
     CommonModule,
     UtenteRoutingModule,

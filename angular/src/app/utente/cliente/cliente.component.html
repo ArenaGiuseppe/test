@@ -10,13 +10,13 @@
             ID
           </th>
           <th>
-            Nome Progetto
-          </th>
-          <th>
             Nome Cliente
           </th>
           <th>
-            Documenti associati
+            Utente assegnatario
+          </th>
+          <th>
+            Progetto associato
           </th>
         </tr>
         <tr>
@@ -24,39 +24,39 @@
 
           </td>
           <td>
-            <input placeholder="nome Progetto" [(ngModel)]="insertProgetto.nomeProgetto">
+            <input placeholder="nome cliente" [(ngModel)]="insertCliente.nomeCliente">
           </td>
           <td>
-            <input placeholder="nome Progetto" [(ngModel)]="insertProgetto.cliente">
+            <input placeholder="utente assegnatario" [(ngModel)]="insertCliente.user">
           </td>
           <td>
-            <input placeholder="nome Progetto" [(ngModel)]="insertProgetto.documento">
+            <input placeholder="progetto assocaito" [(ngModel)]="insertCliente.progetto">
           </td>
           <td>
-            <button (click)="insertProgetti(insertProgetto)">Inserisici</button>
+            <button (click)="insertClienti(insertCliente)">Inserisici</button>
           </td>
           <td>
             <button (click)="clear()">Clear</button>
           </td>
         </tr>
-        <tr *ngFor="let progetti of project">
+        <tr *ngFor="let clienti of cliente">
           <td>
-            {{progetti.id}}
+            {{clienti.id}}
           </td>
           <td>
-            <input [(ngModel)]="progetti.nomeProgetto">
+            <input [(ngModel)]="clienti.nomeCliente">
           </td>
           <td>
-            <input [(ngModel)]="progetti.cliente">
+            <input [(ngModel)]="clienti.user">
           </td>
           <td>
-            <input [(ngModel)]="progetti.documento">
+            <input [(ngModel)]="clienti.progetto">
           </td>
           <td>
-            <button (click)="updateProgetti(progetti)">Salva</button>
+            <button (click)="updateClienti(clienti)">Salva</button>
           </td>
           <td>
-            <button (click)="deleteProgetti(progetti)">Cancella</button>
+            <button (click)="deleteClienti(clienti)">Cancella</button>
           </td>
         </tr>
       </table>

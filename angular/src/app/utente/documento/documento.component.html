@@ -12,13 +12,19 @@
           <th>
             Nome Documento
           </th>
+          <th>
+            Nome Progetto
+          </th>
         </tr>
         <tr>
           <td>
 
           </td>
           <td>
-            <input placeholder="nome Progetto" [(ngModel)]="insertDocumento.nomeDocumento">
+            <input placeholder="nome documento" [(ngModel)]="insertDocumento.nomeDocumento">
+          </td>
+          <td>
+            <input placeholder="nome Progetto riferimento" [(ngModel)]="insertDocumento.progetto">
           </td>
           <td>
             <button (click)="insertDocumenti(insertDocumento)">Inserisici</button>
@@ -33,6 +39,9 @@
           </td>
           <td>
             <input [(ngModel)]="documenti.nomeDocumento">
+          </td>
+          <td>
+            <input [(ngModel)]="documenti.progetto">
           </td>
           <td>
             <button (click)="updateDocumenti(documenti)">Salva</button>

@@ -4,7 +4,7 @@ import {UtenteLayoutComponent} from '../layout/utente-layout/utente-layout.compo
 import {UtenteDashboardComponent} from './utente-dashboard/utente-dashboard.component';
 import {UsersComponent} from './users/users.component';
 import {WorkInProgressComponent} from './work-in-progress/work-in-progress.component';
-import {ProgettoComponent} from "./progetto/progetto.component";
+import {ProgettoComponent} from './progetto/progetto.component';
 
 
 const routes: Routes = [

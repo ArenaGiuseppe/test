@@ -1,9 +1,10 @@
-import {ProgettoDTO} from "./progettodto";
+import {ProgettoDTO} from './progettodto';
 
 
-export class DocumentoDTO{
+export class DocumentoDTO {
 
     id: number;
     nomeDocumento: string;
+    progetto: ProgettoDTO;
 
 }

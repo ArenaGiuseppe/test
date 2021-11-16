@@ -9,15 +9,15 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class UserService extends AbstractService<UserDTO>{
+export class UserService extends AbstractService<UserDTO> {
 
   constructor(http: HttpClient) {
     super(http);
-    this.type = 'user';//uso per evitare di riscrivere user quando mi prendo l'url vale anche per progetto e documento
+    this.type = 'user'; // uso per evitare di riscrivere user quando mi prendo l'url vale anche per progetto e documento
   }
 
   login(loginDTO: LoginDTO): Observable<UserDTO> {
-    return this.http.post<any>('http://localhost:8080/' + this.type + '/login', loginDTO)
+    return this.http.post<any>('http://localhost:8080/' + this.type + '/login', loginDTO);
   }
 
 }

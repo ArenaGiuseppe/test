@@ -22,6 +22,9 @@
             Usertype
           </th>
           <th>
+            Progetti
+          </th>
+          <th>
             Edit
           </th>
           <th>
@@ -48,6 +51,9 @@
             </select>
           </td>
           <td>
+            <input placeholder="cognome" [(ngModel)]="usertoinsert.cliente">
+          </td>
+          <td>
             <button (click)="insert(usertoinsert)">Insert</button>
           </td>
           <td>
@@ -72,6 +78,9 @@
               <option [selected]="user.usertype===UTENTE" value="UTENTE">UTENTE</option>
               <option [selected]="user.usertype===CLIENTE" value="CLIENTE">CLIENTE</option>
             </select>
+          </td>
+          <td>
+            <input [(ngModel)]="user.cliente">
           </td>
           <td>
             <button (click)=update(user)>Save</button>
