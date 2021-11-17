@@ -11,8 +11,7 @@ import {ProgettoDTO} from '../../../dto/progettodto';
 export class DocumentoComponent implements OnInit {
 
   documento: DocumentoDTO[];
-  progetto: any;
-  progettoDTO: ProgettoDTO[];
+  progetto: ProgettoDTO[];
   insertDocumento: DocumentoDTO = new DocumentoDTO();
 
   constructor(
@@ -22,7 +21,6 @@ export class DocumentoComponent implements OnInit {
 
   ngOnInit() {
     this.getDocumenti();
-    this.progetto = JSON.stringify(this.progettoDTO);
 
   }
 

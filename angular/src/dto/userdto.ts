@@ -14,7 +14,7 @@ export class UserDTO {
 
    cognome: string;
 
-   cliente: ClienteDTO[];
+   cliente: ClienteDTO;
 
    usertype: Usertype;
 

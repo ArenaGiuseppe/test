@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/service/user.service';
 import { UserDTO } from 'src/dto/userdto';
+import {ClienteDTO} from '../../../dto/clientedto';
 
 @Component({
   selector: 'app-users',
@@ -10,6 +11,7 @@ import { UserDTO } from 'src/dto/userdto';
 export class UsersComponent implements OnInit {
 
   users: UserDTO[];
+  cliente: ClienteDTO[];
   usertoinsert: UserDTO = new UserDTO();
 
   constructor(private service: UserService) { }

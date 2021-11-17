@@ -8,6 +8,6 @@ export class ProgettoDTO {
     id: number;
     nomeProgetto: string;
     cliente: ClienteDTO;
-    documento: DocumentoDTO[];
+    documento: DocumentoDTO;
 
  }

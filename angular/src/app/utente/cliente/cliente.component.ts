@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import {ClienteDTO} from '../../../dto/clientedto';
 import {ClienteService} from '../../../service/cliente.service';
+import {UserDTO} from '../../../dto/userdto';
+import {ProgettoDTO} from '../../../dto/progettodto';
 
 @Component({
   selector: 'app-cliente',
@@ -11,6 +13,8 @@ import {ClienteService} from '../../../service/cliente.service';
 export class ClienteComponent implements OnInit {
 
   cliente: ClienteDTO[];
+  user: UserDTO[];
+  progetto: ProgettoDTO[];
 
   insertCliente: ClienteDTO = new ClienteDTO();
 

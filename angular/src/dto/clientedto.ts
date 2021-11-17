@@ -7,6 +7,6 @@ export class ClienteDTO {
     id: number;
     nomeCliente: string;
     user: UserDTO;
-    progetto: ProgettoDTO[];
+    progetto: ProgettoDTO;
 
 }
