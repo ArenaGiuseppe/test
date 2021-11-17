@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {DocumentoDTO} from '../../../dto/documentodto';
 import {DocumentoService} from '../../../service/documento.service';
+import {ProgettoDTO} from '../../../dto/progettodto';
 
 @Component({
   selector: 'app-documento',
@@ -10,6 +11,8 @@ import {DocumentoService} from '../../../service/documento.service';
 export class DocumentoComponent implements OnInit {
 
   documento: DocumentoDTO[];
+  progetto: any;
+  progettoDTO: ProgettoDTO[];
   insertDocumento: DocumentoDTO = new DocumentoDTO();
 
   constructor(
@@ -19,6 +22,7 @@ export class DocumentoComponent implements OnInit {
 
   ngOnInit() {
     this.getDocumenti();
+    this.progetto = JSON.stringify(this.progettoDTO);
 
   }
 
